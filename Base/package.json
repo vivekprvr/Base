@@ -1,0 +1,19 @@
+{
+  "name": "lcs-web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "concat:scss": "node-sass --output-style=compressed --source-map=true -w -o dist/css/ assets/scss",
+    "concat:imagemin": "imagemin --out-dir=dist/img assets/img/**/*.{png,jpg,gif}",
+    "concat": "npm run concat:scss && npm run concat:imagemin"
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concat": "^1.0.3",
+    "node-sass": "^4.9.4"
+  }
+}
